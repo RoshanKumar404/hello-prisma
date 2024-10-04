@@ -2,7 +2,7 @@ const gettingTOken= require('../heloer/JwtTokens')
 
 const cookieToken=(user,res)=>{
     const token= gettingTOken(user.id)
-    const options={
+    const options =  {
         expires:new Date(
             Date.now()+ 3*24*60*60*1000
         ),
@@ -13,7 +13,7 @@ const cookieToken=(user,res)=>{
         succes:true,
         token,
         user
-
+ 
     })
 }
 
